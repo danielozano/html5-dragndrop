@@ -1,0 +1,9 @@
+#file-drag {
+	border: 1px dashed black;
+	display: none;
+	height: 200px;
+}
+
+#file-drag.hover {
+	border-color: red;
+}

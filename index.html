@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<title>Drag &amp; Drop</title>
+</head>
+<body>
+	<form action="" method="POST" action="upload" enctype="multipart/form-data">
+		<input type="hidden" name="MAX_FILE_SIZE value=250000" />
+		<div>
+			<label for="file">Sube tu archivo</label>
+			<input type="file" id="file" name="files[]" multiple="multiple" />
+			<div id="file-drag">
+				O arrástralos aquí
+			</div>
+		</div>
+		<button type="submit">!Subir¡</button>
+	</form>
+	<div id="uploaded-files"></div>
+	<script src="./assets/js/scripts.js"></script>
+</body>
+</html>

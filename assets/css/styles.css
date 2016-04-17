@@ -1,9 +1,37 @@
+body,html { 
+	margin: 0;
+	padding: 0 8px;
+}
+
+header h1 {
+	text-align: center;
+}
+
 #file-drag {
 	border: 1px dashed black;
 	display: none;
-	height: 200px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
 }
 
 #file-drag.hover {
 	border-color: red;
+}
+
+footer {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+	header, main, footer {
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	#file-drag {
+		line-height: 200px;
+		height: 200px;
+	}
 }

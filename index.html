@@ -7,8 +7,12 @@
 	<title>Drag &amp; Drop</title>
 </head>
 <body>
+	<header>
+		<h1>Ejemplo de Drag &amp; Drop</h1>
+	</header>
+	<main>
 	<form action="" method="POST" action="upload" enctype="multipart/form-data">
-		<input type="hidden" name="MAX_FILE_SIZE value=250000" />
+		<input type="hidden" name="MAX_FILE_SIZE" value="250000" />
 		<div>
 			<label for="file">Sube tu archivo</label>
 			<input type="file" id="file" name="files[]" multiple="multiple" />
@@ -19,6 +23,10 @@
 		<button type="submit">!Subir¡</button>
 	</form>
 	<div id="uploaded-files"></div>
+	</main>
+	<footer>
+		Daniel Lozano Morales
+	</footer>
 	<script src="./assets/js/scripts.js"></script>
 </body>
 </html>
